@@ -5,71 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css"/>
-    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Marco's Website Porfolio</title>
 </head>
 
 <body>
-
+    <a id="top"></a>
     <header class="header">
         <h1>
-            Marco's Website Portfolio    
+            Marco's Website Portfolio
         </h1>
         <!-- added nav for navigation links -->
         <nav>
             <ul class="header-ul">
-                <li><a href="#about-me">About Me</a></li> 
+                <li><a href="#top">Top</a></li>
+                <li><a href="#about-me">About Me</a></li>
                 <li><a href="#works">Works</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>  
             </ul>
         </nav>
 
     </header>
-    
+
     <section class="banner"></section>
 
     <!-- About Me Section -->
-    <section>
-        <h2 id="about-me">About me</h2>
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ad debitis nesciunt voluptate. Eius quos laborum dolore quod sequi? Tempore, aut est. Amet sed accusantium error sunt? Voluptatum, voluptas praesentium!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ad debitis nesciunt voluptate. Eius quos laborum dolore quod sequi? Tempore, aut est. Amet sed accusantium error sunt? Voluptatum, voluptas praesentium!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ad debitis nesciunt voluptate. Eius quos laborum dolore quod sequi? Tempore, aut est. Amet sed accusantium error sunt? Voluptatum, voluptas praesentium!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ad debitis nesciunt voluptate. Eius quos laborum dolore quod sequi? Tempore, aut est. Amet sed accusantium error sunt? Voluptatum, voluptas praesentium!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ad debitis nesciunt voluptate. Eius quos laborum dolore quod sequi? Tempore, aut est. Amet sed accusantium error sunt? Voluptatum, voluptas praesentium!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ad debitis nesciunt voluptate. Eius quos laborum dolore quod sequi? Tempore, aut est. Amet sed accusantium error sunt? Voluptatum, voluptas praesentium!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ad debitis nesciunt voluptate. Eius quos laborum dolore quod sequi? Tempore, aut est. Amet sed accusantium error sunt? Voluptatum, voluptas praesentium!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ad debitis nesciunt voluptate. Eius quos laborum dolore quod sequi? Tempore, aut est. Amet sed accusantium error sunt? Voluptatum, voluptas praesentium!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ad debitis nesciunt voluptate. Eius quos laborum dolore quod sequi? Tempore, aut est. Amet sed accusantium error sunt? Voluptatum, voluptas praesentium!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ad debitis nesciunt voluptate. Eius quos laborum dolore quod sequi? Tempore, aut est. Amet sed accusantium error sunt? Voluptatum, voluptas praesentium!
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ad debitis nesciunt voluptate. Eius quos laborum dolore quod sequi? Tempore, aut est. Amet sed accusantium error sunt? Voluptatum, voluptas praesentium!
+    <section class="about-me">
+        <aside>
+            <h2 id="about-me">About me</h2>
+        </aside>
+        <p>
+            My name is Marco Flores and I'm looking for a start in a new career. I've been taking college classes 
+            for the last couple of years and decided that I would like to try my hand at coding.
+            Initially I was going to join the military in order to get experinece in my field before going to the 
+            private sector, but I decided to take a coding bootcamp online at UCSD extension that is partnered with Trilogy.
+            I hope to be able to get a job in coding after graduation from this course and start my career in programing.
 
-            </p>
+        </p>
         </h2>
     </section>
-    
-    <h2 id="works">Works</h2>
-    
+
+
     <main class="projects">
+
+        <aside>
+            <h2 id="works">Works</h2>
+        </aside>
+
         <div class="column">
 
             <figure class="box">
+        
                 <h2 class="box-title">
-                    Work #1
+                    <a href="https://maestroluu.github.io/Covid19-Testing-Site-Locator/"> Covid-19 Testing Site Locator</a> <br>
+                    <a href="https://github.com/MaestroLuu/Covid19-Testing-Site-Locator.git">Github Repository</a>
                 </h2>
-                
+
             </figure>
 
             <figure class="box">
                 <h2 class="box-title">
-                    Work #2
+                    <a href="https://github.com/JaggedComet/password-generator-marco">Password Generator</a><br>
+                    <a href="">Github Repository</a>
                 </h2>
             </figure>
 
             <figure class="box">
                 <h2 class="box-title">
-                    Work #3
+                    <a href="https://github.com/JaggedComet/work-day-scheduler">Work Day Scheduler</a> <br>
+                    <a href="">Github Repository</a>
                 </h2>
             </figure>
 
@@ -91,20 +95,23 @@
                 </h2>
             </figure>
 
-        </div> 
+        </div>
     </main>
 
-    <section class="contact-me-section">
-        <h2 id="contact-me">Contact Me</h2>
-        <nav>
-            <ul class="contact-me-ul">
-                <li>Email: MarcoFlores1029@gmail.com</a></li>
+    <footer id="contact-me">
+        <div class="contact-me-section">
+
+            <ul>
+                <li><a href="mailto:MarcoFlores1029@gmail.com">Contact Me</a></li>
                 <li><a href="https://github.com/JaggedComet?tab=repositories">Github</a></li>
                 <li><a href="https://www.linkedin.com/in/marco-flores-923602175/">Linkdin</a></li>
             </ul>
-        </nav>
-    </section>
 
+        </div>
+        <div class="copyright">
+            <p>Marco Flores Copywright 2016</p>
+        </div>
+    </footer>
 </body>
 
 </html>

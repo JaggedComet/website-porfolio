@@ -1,35 +1,43 @@
 :root {
     --darkblue: #1d3e6e;
-    --darkgrey: #13201d;
-    --
+    --darkblack: black;
 }
 
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: teal;
 }
 
+
 aside {
-    height: 100%;
+    /* height: 100%;
     width: 15%;
     display: inline;
     padding-right: 7%;
-    padding-left: 5%;  
+    padding-left: 5%;   */
+    align-self:center;
+    height: 100%;
+    width: 15%;
+    display: inline;
+    padding-right: 6%;
+    padding-left: 5%;
+    font-size: 2rem;
+    border-right: 0.5rem #13201d solid;
 }
 
 
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--darkgrey);
+    background-color: var(--darkblack);
     color: #ffffff;
     width: 100%;
     margin: 0 auto;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 
 .header nav {
@@ -47,6 +55,7 @@ aside {
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    color: white;
 }
 
 .banner {
@@ -58,10 +67,22 @@ aside {
     background-position: center;
 }
 
+.about-me {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 0 auto;
+}
 
+.about-me p {
+    font-size: 30px;
+    text-indent: 50px;
+    line-height: 1.8;
+}
 .projects {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     max-width: 90%;
     margin: 0 auto;
@@ -83,6 +104,7 @@ aside {
     padding-top: 2em;
     padding-bottom: 1em;
     border: 2px solid black;
+    display: inline-block;
 }
 
 .box-title {
@@ -93,36 +115,46 @@ aside {
     width: 50%;
 }
 
+footer {
+    background-color: #333333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .contact-me-section {
-    width: 100%;
-    margin: 0 auto;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
-.contact-me-section nav {
-    float: center;
-}
-
-.contact-me-ul {
-    margin: 0;
+.contact-me-section ul {
     padding: 0;
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
 }
 
-.contact-me-section nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+.contact-me-section li {
+    display: inline;
 }
 
-/* To make boxes clickable */
-/* ws1 a, .ws2 a, .ws3 a, .ws4 a, .ws5 a {
-    display: block;
-    width: 100%;
-    height: 100%;
-} */
+.contact-me-section a {
+    color: #d9d9d9;
+    text-decoration: none;
+    font-size: 13px;
+}
 
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    margin: 0;
+    color: #b3b3b3;
+    font-size: 11px;
+}
 
 @media screen and (min-width: 768px;) {
     .column {
