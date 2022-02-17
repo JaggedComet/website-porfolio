@@ -23,7 +23,7 @@ aside {
     padding-right: 6%;
     padding-left: 5%;
     font-size: 2rem;
-    border-right: 0.5rem #13201d solid;
+    /* border-right: 0.5rem #13201d solid; */
 }
 
 
@@ -62,12 +62,13 @@ aside {
     height: 10vh;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/david-von-diemar-GraEtZd6VVk-unsplash.jpg");
+    /* background-image: url("../images/david-von-diemar-GraEtZd6VVk-unsplash.jpg"); */
     background-size: cover;
     background-position: center;
 }
 
 .about-me {
+    padding-top: 2em;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -100,19 +101,47 @@ aside {
     margin-bottom: 0.5em;
     width: 100%;
     color: white;
-    background-image: url(https://images.unsplash.com/photo-1640055787574-d41d641ed3ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+    background-color: black;
     padding-top: 2em;
     padding-bottom: 1em;
     border: 2px solid black;
     display: inline-block;
 }
 
+.box1 {
+    background-image: url(/assets/images/demoCovid.png);
+}
+
+.box2 {
+    background-image: url(/assets/images/demoHelp.png);
+}
+
+.box3 {
+    background-image: url(/assets/images/demoWorkday.png);
+    background-repeat: no-repeat;
+}
+
+.box4 {
+    background-image: url(/assets/images/demoREADME.png);
+    background-repeat: no-repeat;
+}
+
+.box5 {
+    background-image: url(/assets/images/demoTeam.png);
+    background-repeat: no-repeat;
+}
+
+.box6 {
+    background-image: url(/assets/images/demoEmployee.png);
+    background-repeat: no-repeat;
+}
+
 .box-title {
     font-size: 20px;
     padding: 1em;
     color: black;
-    background-color: white;
-    width: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 40%;
 }
 
 footer {
